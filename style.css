@@ -1,7 +1,235 @@
-.red{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+html{
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    
 }
 
-.blue{
-    color: blue;
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: rgb(192, 193, 201);
+    background: linear-gradient(45deg, rgb(162, 163, 153), rgb(45, 65, 97));
+    
 }
+
+.background{
+    padding: 30px;
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template: min-content 1fr / 1fr 4fr;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 0 0;
+    margin: 0 0;
+    background-image: url(project1.jpg);
+    background-color: white;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: bottom -60px right -150px;
+    
+}
+
+.sidebar{
+    background-color: rgb(45, 65, 97);
+    grid-row: 1 / -1;
+    border-radius: 20px 0 0 20px;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px;
+    gap: 5px;
+}
+
+.dashboardLogo{
+    border-radius: 0;
+    width: 100px;
+    height: auto;
+}
+
+.logo>h1{
+    color: rgb(237, 196, 54);
+    font-size: 1.5em;
+    font-family: 'Patua One', cursive;
+    font-weight: bold;
+}
+
+.sidebar button{
+    border: none;
+    background: none;
+    color: white;
+    font-weight: bold;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 196, 54);
+    border-radius: 0 20px 0 0;
+}
+
+.top{
+    display: grid;
+    grid-template: 1fr / 1fr 10fr 1fr 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(237, 196, 54, O.5)
+    border-radius: 0 20px 0 0;
+}
+
+.top img{
+    height: 40%;
+    width: auto;
+}
+
+.top>img:nth-of-type(3){
+    height: 2em;
+    width: auto;
+    margin: 3px;
+}
+
+#searchbar{
+    width: 85%;
+    height: 40%;
+    
+    justify-self: flex-start;
+    border-radius: 5px;
+}
+
+.bottom{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  
+}
+
+.bottomLeft{
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template: 1fr 1fr/ fit-content(30px) 5fr;
+    justify-items: flex-start;
+    gap: 5px;
+}
+
+.header p{
+    padding: 0;
+    margin: 0;
+}
+
+.bottomLeft>p:nth-of-type(1){
+    align-self: flex-end;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bottomLeft>p:nth-of-type(2){
+    font-weight: bold;
+}
+
+.bottomLeft>img{
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+    width: 3.5em;
+    height: auto;
+    grid-row: 1 / -1;
+    margin: 5px;
+}
+
+.bottomRight{
+    grid-column: 3 / 4;
+}
+
+.bottomRight>ul{
+    display: flex;
+}
+
+.mainContent{
+    grid-area: 2 /2 /-1 /-1;
+    display: grid;
+    grid-template: 1fr 1fr / 7fr 3fr;
+}
+
+.yourProjects{
+    
+    grid-area: 1 /1 /-1 /2;
+    display: flex;
+    flex-direction: column;
+}
+
+.yourProjects>h3{
+    margin: 0;
+}
+
+.cardSection{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 30vh;
+    grid-auto-rows: 30vh;
+    align-content: start;
+}
+
+.announcements{
+   
+    grid-area: 1 /2 /2 /-1;
+    display: flex;
+    flex-direction: column;
+}
+
+.announCards{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.trending{
+    
+    grid-area: 2 /2 /-1 /-1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 20px 0;
+}
+
+.liseret{
+    background-color: rgb(244, 200, 74);
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+.cardContent{
+    border: solid 1px green;
+    grid-area: 1 / 2 / -1 / -1;
+}
+
+.cardSection>div{
+    border: 1px solid blue;
+    display: grid;
+    grid-template: 1fr / 1fr 30fr;
+}
+
+.trendingCards{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
