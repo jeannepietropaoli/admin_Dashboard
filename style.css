@@ -14,7 +14,6 @@ body{
     justify-content: center;
     background: rgb(192, 193, 201);
     background: linear-gradient(45deg, rgb(162, 163, 153), rgb(45, 65, 97));
-    
 }
 
 .background{
@@ -49,6 +48,17 @@ body{
     grid-template: min-content min-content min-content / 1fr;
     justify-items: start;
     padding: 15px;
+}
+
+.menu li>img{
+    height: 20px;
+    width: auto;
+}
+
+.menu li{
+    display: flex;
+    margin: 7px;
+    gap: 13px;
 }
 
 .sidebar ul{
@@ -94,23 +104,38 @@ img{
 }
 
 .header{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: min-content min-content / 1fr;
     background-color: rgb(66, 75, 80);
     color: white;
 }
 
 .top{
     display: grid;
-    grid-template: 1fr / 1fr 10fr 1fr 1fr 3fr;
+    grid-template: min-content / 1fr 10fr 4fr;
     align-items: center;
     justify-items: center;
     background-color: rgb(25, 171, 143);
+    font-weight: bold;
+}
 
+.top div:nth-of-type(2){
+    justify-self: end;
+    display: grid;
+    grid-template: min-content / min-content min-content fit-content(100px);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin-right: 35px;
 }
 
 .top img{
-    height: 40%;
+    height: 38%;
+    width: auto;
+}
+
+#topProfilePic{
+    height:37px;
     width: auto;
 }
 
@@ -123,7 +148,7 @@ img{
 #searchbar{
     width: 85%;
     height: 40%;
-    
+    background-color: white;
     justify-self: flex-start;
     border-radius: 5px;
 }
@@ -131,7 +156,6 @@ img{
 .bottom{
     display: grid;
     grid-template: 1fr / 1fr 1fr;
-  
 }
 
 .bottomLeft{
@@ -165,6 +189,7 @@ img{
     height: auto;
     grid-row: 1 / -1;
     margin: 5px;
+    margin-left: 10px;
 }
 
 .bottomRight{
@@ -173,6 +198,17 @@ img{
 
 .bottomRight>ul{
     display: flex;
+    gap: 10px;
+    margin-right: 10px;
+    
+}
+
+.headerBtn{
+    border-image: linear-gradient(45deg, rgb(25, 171, 143), rgb(148, 199, 64)) 1;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 5px 14px;
 }
 
 .mainContent{
@@ -186,7 +222,8 @@ img{
     grid-area: 1 /1 /-1 /2;
     display: flex;
     flex-direction: column;
-    padding: 15px 25px;
+    margin: 15px 25px;
+    margin-right: 0;
 }
 
 h3{
@@ -216,7 +253,7 @@ h3{
 }
 
 .announcements{
-   
+    margin: 25px;
     grid-area: 1 /2 /2 /-1;
     display: flex;
     flex-direction: column;
@@ -224,15 +261,50 @@ h3{
 
 .announCards{
     display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: min-content;
+    grid-auto-rows: min-content;
+    gap: 22px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgb(66, 75, 80);
+    padding: 22px;
+}
+
+.announCards h4,
+.announCards p{
+   margin: 0;
+}
+
+.announCards p{
+    margin-top: 5px;
 }
 
 .trending{
-    
+    margin: 25px;
+    margin-top: 0;
     grid-area: 2 /2 /-1 /-1;
     display: flex;
     flex-direction: column;
     border-radius: 0 0 20px 0;
+}
+
+.trendingCards{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 22px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgb(66, 75, 80);
+    padding: 22px;
+}
+
+.trendingCards h4,
+.trendingCards p{
+   margin: 0;
+}
+
+.announCards p{
+    margin-top: 5px;
 }
 
 .liseret{
@@ -247,6 +319,7 @@ h3{
     grid-template: 3fr 1fr / 1fr 30fr;
     box-shadow: 3px 3px 3px rgb(66, 75, 80);
     border-radius: 8px;
+    position: relative;
 }
 
 .cardContent>div:nth-child(2){
@@ -283,8 +356,8 @@ h3{
     height: auto;
 }
 
-.trendingCards{
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
+button:hover{
+    cursor: pointer;
 }
+
 
