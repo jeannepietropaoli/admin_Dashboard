@@ -302,6 +302,10 @@ h3{
     position: relative;
 }
 
+.cardContent:hover{
+    transform: scale(1.04);
+}
+
 .cardContent>div:nth-child(2){
     grid-area: 1 / 2 / 2 / -1;
     width: 70%;
