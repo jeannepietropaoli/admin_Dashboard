@@ -9,206 +9,201 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <div class="background">
-        <div class="container">
-            <div class="sidebar">
-                <div class="logo">
-                    <img class="dashboardLogo" src="computerLogo.jpg" alt="Dashboard logo">
-                    <h1>Dashboard</h1>
-                </div>
-                <ul class="menu">
-                    <li>
-                        <img src="homeLogo.png" alt="Home logo">
-                        <button class="menuBtn">Home</button>
-                    </li>
-                    <li>
-                        <img src="profile.png" alt="Profile logo">
-                        <button class="menuBtn">Profile</button>
-                    </li>
-                    <li>
-                        <img src="messages.png" alt="Messages logo">
-                        <button class="menuBtn">Messages</button>
-                    </li>
-                    <li>
-                        <img src="history.png" alt="History logo">
-                        <button class="menuBtn">History</button>
-                    </li>
-                    <li>
-                        <img src="task.png" alt="Tasks logo">
-                        <button class="menuBtn">Tasks</button>
-                    </li>
-                    <li>
-                        <img src="communities.png" alt="Communities logo">
-                        <button class="menuBtn">Communities</button>
-                    </li>
-                </ul>
-
-                <ul class="menu">
-                    <li>
-                        <img src="setting.png" alt="Settings logo">
-                        <button class="menuBtn">Settings</button>
-                    </li>
-                    <li>
-                        <img src="help.png" alt="Support logo">
-                        <button class="menuBtn">Support</button>
-                    </li>
-                    <li>
-                        <img src="privacy.png" alt="Privacy logo">
-                        <button class="menuBtn">Privacy</button>
-                    </li>
-                </ul>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img class="dashboardLogo" src="computerLogo.jpg" alt="Dashboard logo">
+                <h1>Dashboard</h1>
             </div>
-            <div class="header">
-                <div class="top">
-                    <img src="search.png" alt="searchbar logo">
-                    <div id="searchbar"></div>
+            <ul class="menu">
+                <li data-name="home">
+                    <img src="home.png" alt="Home logo">
+                    <button class="menuBtn">Home</button>
+                </li>
+                <li data-name="profile">
+                    <img src="profile.png" alt="Profile logo">
+                    <button class="menuBtn">Profile</button>
+                </li>
+                <li data-name="messages">
+                    <img src="messages.png" alt="Messages logo">
+                    <button class="menuBtn">Messages</button>
+                </li>
+                <li data-name="history">
+                    <img src="history.png" alt="History logo">
+                    <button class="menuBtn">History</button>
+                </li>
+                <li data-name="task">
+                    <img src="task.png" alt="Tasks logo">
+                    <button class="menuBtn">Tasks</button>
+                </li>
+                <li data-name="communities">
+                    <img src="communities.png" alt="Communities logo">
+                    <button class="menuBtn">Communities</button>
+                </li>
+            </ul>
+
+            <ul class="menu">
+                <li data-name="setting">
+                    <img src="setting.png" alt="Settings logo">
+                    <button class="menuBtn">Settings</button>
+                </li>
+                <li data-name="help">
+                    <img src="help.png" alt="Support logo">
+                    <button class="menuBtn">Support</button>
+                </li>
+                <li data-name="privacy">
+                    <img src="privacy.png" alt="Privacy logo">
+                    <button class="menuBtn">Privacy</button>
+                </li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="top">
+                <img src="search.png" alt="searchbar logo">
+                <div id="searchbar"></div>
+                <div>
+                    <img src="bell.png" alt="notifications bell">
+                    <img id="topProfilePic" src="profilePicf.png" alt="user profile picture">
+                    <p>User Name</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bottomLeft">
+                    <img src="profilePicf.png" alt="User profile picture">
+                    <p>Hi there,</p>
+                    <p>User name (@username)</p>
+                </div>
+                <div class="bottomRight">
+                    <ul>
+                        <li><button class="headerBtn">New</button></li>
+                        <li><button class="headerBtn">Upload</button></li>
+                        <li><button class="headerBtn">Share</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainContent">
+            <div class="yourProjects">
+                <h3>Your projects</h3>
+                <div class="cardSection">
+                    
+                    <div class="cardContent">
+                        <div class="liseret"></div>
+                        <div>
+                            <h4 class="cardTitle">Super Cool Project</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
+                        </div>
+                        <div class="cardBtns">
+                            <button><img src="star.png" alt="add to favorite logo"></button>
+                            <button><img src="share.png" alt="save logo"></button>
+                            <button><img src="save.png" alt="share logo"></button>
+                        </div>
+                    </div>
+                
+            
+            
+                    <div class="cardContent">
+                        <div class="liseret"></div>
+                        <div>
+                            <h4 class="cardTitle">Super Cool Project</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
+                        </div>
+                        <div class="cardBtns">
+                            <button><img src="star.png" alt="add to favorite logo"></button>
+                            <button><img src="share.png" alt="save logo"></button>
+                            <button><img src="save.png" alt="share logo"></button>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="cardContent">
+                        <div class="liseret"></div>
+                        <div>
+                            <h4 class="cardTitle">Super Cool Project</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
+                        </div>
+                        <div class="cardBtns">
+                            <button><img src="star.png" alt="add to favorite logo"></button>
+                            <button><img src="share.png" alt="save logo"></button>
+                            <button><img src="save.png" alt="share logo"></button>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="cardContent">
+                        <div class="liseret"></div>
+                        <div>
+                            <h4 class="cardTitle">Super Cool Project</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
+                        </div>
+                        <div class="cardBtns">
+                            <button><img src="star.png" alt="add to favorite logo"></button>
+                            <button><img src="share.png" alt="save logo"></button>
+                            <button><img src="save.png" alt="share logo"></button>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="cardContent">
+                        <div class="liseret"></div>
+                        <div>
+                            <h4 class="cardTitle">Super Cool Project</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
+                        </div>
+                        <div class="cardBtns">
+                            <button><img src="star.png" alt="add to favorite logo"></button>
+                            <button><img src="share.png" alt="save logo"></button>
+                            <button><img src="save.png" alt="share logo"></button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="announCards">
                     <div>
-                        <img src="bell.png" alt="notifications bell">
-                        <img id="topProfilePic" src="profilePicf.png" alt="user profile picture">
-                        <p>User Name</p>
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
-                </div>
-                <div class="bottom">
-                    <div class="bottomLeft">
-                        <img src="profilePicf.png" alt="User profile picture">
-                        <p>Hi there,</p>
-                        <p>User name (@username)</p>
+                    <div>
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div class="bottomRight">
-                        <ul>
-                            <li><button class="headerBtn">New</button></li>
-                            <li><button class="headerBtn">Upload</button></li>
-                            <li><button class="headerBtn">Share</button></li>
-                        </ul>
+                    <div>
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque?</p>
                     </div>
                 </div>
             </div>
-
-            <div class="mainContent">
-                <div class="yourProjects">
-                    <h3>Your projects</h3>
-                    <div class="cardSection">
-                        
-                        <div class="cardContent">
-                            <div class="liseret"></div>
-                            <div>
-                                <h4 class="cardTitle">Super Cool Project</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
-                            </div>
-                            <div class="cardBtns">
-                                <button><img src="star.png" alt="add to favorite logo"></button>
-                                <button><img src="share.png" alt="save logo"></button>
-                                <button><img src="save.png" alt="share logo"></button>
-                            </div>
-                        </div>
-                    
-                
-                
-                        <div class="cardContent">
-                            <div class="liseret"></div>
-                            <div>
-                                <h4 class="cardTitle">Super Cool Project</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
-                            </div>
-                            <div class="cardBtns">
-                                <button><img src="star.png" alt="add to favorite logo"></button>
-                                <button><img src="share.png" alt="save logo"></button>
-                                <button><img src="save.png" alt="share logo"></button>
-                            </div>
-                        </div>
-                    
-
-                    
-                        <div class="cardContent">
-                            <div class="liseret"></div>
-                            <div>
-                                <h4 class="cardTitle">Super Cool Project</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
-                            </div>
-                            <div class="cardBtns">
-                                <button><img src="star.png" alt="add to favorite logo"></button>
-                                <button><img src="share.png" alt="save logo"></button>
-                                <button><img src="save.png" alt="share logo"></button>
-                            </div>
-                        </div>
-                    
-
-                    
-                        <div class="cardContent">
-                            <div class="liseret"></div>
-                            <div>
-                                <h4 class="cardTitle">Super Cool Project</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
-                            </div>
-                            <div class="cardBtns">
-                                <button><img src="star.png" alt="add to favorite logo"></button>
-                                <button><img src="share.png" alt="save logo"></button>
-                                <button><img src="save.png" alt="share logo"></button>
-                            </div>
-                        </div>
-                    
-
-                    
-                        <div class="cardContent">
-                            <div class="liseret"></div>
-                            <div>
-                                <h4 class="cardTitle">Super Cool Project</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est possimus fugit asperiores?</p>
-                            </div>
-                            <div class="cardBtns">
-                                <button><img src="star.png" alt="add to favorite logo"></button>
-                                <button><img src="share.png" alt="save logo"></button>
-                                <button><img src="save.png" alt="share logo"></button>
-                            </div>
-                        </div>
-                        
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="trendingCards">
+                    <div>
+                        <h4>@miniCuts</h4>
+                        <p>JavaScript Ninja</p>
                     </div>
-                </div>
-                <div class="announcements">
-                    <h3>Announcements</h3>
-                    <div class="announCards">
-                        <div>
-                            <h4>Site Maintenance</h4>
-                            <p>Site is going,,,,,, blqblq bqlblq udhidjo daouao ijf hdhjkd sqguysg fgfggq</p>
-                        </div>
-                        <div>
-                            <h4>Site Maintenance</h4>
-                            <p>Site is going blqblq kllllllllll llllllllllkkk kkkkkkkkkk kkkkkkkk kkkkkkkk kkk bqlblq udhidjodaouaoijf hdhjkd sqguysg fgfggq</p>
-                        </div>
-                        <div>
-                            <h4>Site Maintenance</h4>
-                            <p>Site is going blqblq bqlblq udhidjodaouaoijf hdhjkd sqguysg fgfggq</p>
-                        </div>
+                    <div>
+                        <h4>@miniCuts</h4>
+                        <p>JavaScript Ninja</p>
                     </div>
-                </div>
-                <div class="trending">
-                    <h3>Trending</h3>
-                    <div class="trendingCards">
-                        <div>
-                            <h4>@miniCuts</h4>
-                            <p>JavaScript Ninja</p>
-                        </div>
-                        <div>
-                            <h4>@miniCuts</h4>
-                            <p>JavaScript Ninja</p>
-                        </div>
-                        <div>
-                            <h4>@miniCuts</h4>
-                            <p>JavaScript Ninja</p>
-                        </div>
-                        <div>
-                            <h4>@miniCuts</h4>
-                            <p>JavaScript Ninja</p>
-                        </div>
+                    <div>
+                        <h4>@miniCuts</h4>
+                        <p>JavaScript Ninja</p>
+                    </div>
+                    <div>
+                        <h4>@miniCuts</h4>
+                        <p>JavaScript Ninja</p>
                     </div>
                 </div>
             </div>
-            
-            
-        
         </div>
     </div>
+    
 
     
     <!-- <a href="https://www.vecteezy.com/free-vector/asian-woman">Asian Woman Vectors by Vecteezy</a>
